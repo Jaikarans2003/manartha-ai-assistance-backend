@@ -9,10 +9,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // CORS configuration (important for cross-origin requests)
-app.use(cors({
-    origin: '*'// Allow requests from your React app's origin
-}));
-
+app.use(cors({ origin: 'https://manarthaaiassistancejaikaran.netlify.app' })); // Replace with your actual Netlify URL
 // Body parsing middleware
 app.use(bodyParser.json());
 
